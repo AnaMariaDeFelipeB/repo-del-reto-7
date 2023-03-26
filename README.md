@@ -11,7 +11,7 @@ Para comenzar, adjuntare el pantallazo de una parte de los ejercicios planteados
 
 ---
 
-Ahora bien, una vez ya revisado los ejercicios, me dirijire directamento a los puntos del reto. (Pd: Revisar el archivo para más comodidad). 
+Ahora bien, una vez ya revisado los ejercicios, me dirigiré directamente a los puntos del reto. (Pd: Revisar el archivo para más comodidad).
 
 Para comenzar observamos el primer punto. 
 
