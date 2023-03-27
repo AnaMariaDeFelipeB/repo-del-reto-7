@@ -26,8 +26,14 @@ while (numero1 <= 100):  # Condición: mientras que a, sea menor o igual que 100
     numero1 +=1  # Actualiza. 
 print("El valor con el que se termina el ciclo es " + str(numero1)) # Finaliza el ciclo. 
 ```
-
-LINK IMAGEN. 
+ `Diagrama de flujo de números del 1 al 100 elevados al cuadrado.` 
+```mermaid
+flowchart TD
+    A[Inicio.] -->B(Numero n = 0)
+    B --> C{es n menor o igual a 100}
+    C -->|NO| D(Imprimir: Finaliza el ciclo.) --->E[Fin del ciclo.]
+    C -->|SI| J(Imprimir: n**2) --->G(n = n+1) ---->C
+```
 
 ---
 
@@ -57,8 +63,26 @@ while (a <=1000): # Condición: Números menores o iguales a 1000.
 print("Fin lista pares") #Fin del ciclo: Imprime comentario indicando el fin de la lista de los número pares.
 ```
 
-
-LINK IMAGEN. 
+ `Diagrama de flujo de números impares del 1 al 999.` 
+```mermaid
+flowchart TD
+    A[Inicio.] -->B(Numero i = 0) --->C(Imprimir: Inicio lista impares)
+    C ---> D{Es i menor o igual a 999}
+    D --->|NO| E(Imprimir: Fin lista números impares.) --->J[Fin ciclo.]
+    D --->|SI| F(i = i+1) ---> G{El modulo entre i y 2 es igual a 0}
+    G --->|SI| D
+    G --->|NO| I(Imprimir i) -->D
+```
+  `Diagrama de flujo de números pares del 1 al 1000.` 
+```mermaid
+flowchart TD
+    A[Inicio.] -->B(Numero a = 0) --->C(Imprimir: Inicio lista pares)
+    C ---> D{Es i menor o igual a 1000}
+    D --->|NO| E(Imprimir: Fin lista números pares.) --->J[Fin ciclo.]
+    D --->|SI| F(a = a+1) ---> G{El modulo entre i y 2 NO es igual a 0}
+    G --->|SI| D
+    G --->|NO| I(Imprimir i) -->D
+```
 
 --- 
 Avanzando, nos encontramos con el siguiente punto. 
@@ -76,7 +100,17 @@ while (n>=2): # Condición: Que n sea mayor a 2.
         print(n) # Si se cumple la condición anteriormente dada, imprime a n y reevalúa el código. 
 ```
 
-LINK IMAGEN. 
+  `Diagrama de flujo: Lista descendente de números pares.` 
+```mermaid
+flowchart TD
+    A[Inicio.] -->B(Numero n.) --->C(Ingrese número mayor o igual a 2: ) --->D(Imprimir el número ingresado.)
+    D --->E{El número ingresado es igual o mayor a 2}
+    E --->|NO| F{Fin del ciclo.} 
+    E --->|SI| G(n = n-1) 
+    G --->H{Es el modulo entre n y 2 par.}
+    H --->|SI| J(Imprimir n) --->E
+    H --->|NO| E
+```
 
 ---
 
@@ -171,6 +205,7 @@ while (2<=n<=50) and divisorDen<=n: # Condición: que "n" este entre 2 y 50 y qu
 ---
 
 Continuamos con el siguiente punto. 
+
 8. Implementar el algoritmo que muestre los números primos del 1 al 100. nota: use funciones
 
 Desarrolle el siguiente código para la solución de dicho punto. 
